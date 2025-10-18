@@ -65,7 +65,6 @@ print("This tool lets you add DNA sequences, analyze base counts and GC content,
 print("cluster sequences into groups, and visualize or save the results.\n")
 
 file_path = 'dna_data.csv'
-output_file = 'dna_results.csv'
 df = load_data(file_path)
     
 while True:
@@ -75,7 +74,7 @@ while True:
     print("3. Cluster sequences")
     print("4. Display results")
     print("5. Exit")
-    choice = input("Enter your choice (1-6): ")
+    choice = input("Enter your choice (1-5): ")
     if choice=='1':
         df = add_sequence(df)
     elif choice=='2':
@@ -93,7 +92,8 @@ while True:
         print("Exiting program. Goodbye!")
         break
     else:
-        print("Invalid choice! Please enter a number between 1 and 6.")
+        print("Invalid choice! Please enter a number between 1 and 5.")
+
 
 
 
